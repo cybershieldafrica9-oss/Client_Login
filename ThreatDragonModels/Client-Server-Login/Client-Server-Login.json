@@ -103,6 +103,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 0,
             "ports": {
               "groups": {
                 "top": {
@@ -186,7 +187,6 @@
               ]
             },
             "id": "673cc71b-2a0b-4972-92c2-4a93eda3d72e",
-            "zIndex": 0,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -197,18 +197,11 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
             "position": {
-              "x": 23.00000000000003,
+              "x": 13.000000000000028,
               "y": 145
             },
             "size": {
@@ -227,6 +220,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -310,7 +304,6 @@
               ]
             },
             "id": "3c9c6cb4-4e86-487d-996c-3695962c3b1e",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Browser",
@@ -331,7 +324,7 @@
           },
           {
             "position": {
-              "x": 250,
+              "x": 240,
               "y": 140
             },
             "size": {
@@ -350,6 +343,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -433,7 +427,6 @@
               ]
             },
             "id": "fcd6427b-b447-49ee-b1c5-14a0cd336ee4",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Auth Server",
@@ -486,6 +479,7 @@
               ""
             ],
             "id": "b2b5f0af-5b90-4d36-9b07-8b4f4c2e7976",
+            "parent": "3c9c6cb4-4e86-487d-996c-3695962c3b1e",
             "source": {
               "cell": "3c9c6cb4-4e86-487d-996c-3695962c3b1e",
               "port": "3345c225-7ac5-4524-bc23-a3be41a30207"
@@ -494,8 +488,7 @@
               "cell": "3c9c6cb4-4e86-487d-996c-3695962c3b1e",
               "port": "3345c225-7ac5-4524-bc23-a3be41a30207"
             },
-            "vertices": [],
-            "parent": "3c9c6cb4-4e86-487d-996c-3695962c3b1e"
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -591,7 +584,8 @@
             "target": {
               "cell": "fcd6427b-b447-49ee-b1c5-14a0cd336ee4",
               "port": "2899be54-76d3-46fa-85c1-5687a79b708f"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -643,8 +637,8 @@
           },
           {
             "position": {
-              "x": 493,
-              "y": 155
+              "x": 473,
+              "y": 150
             },
             "size": {
               "width": 120,
@@ -665,6 +659,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -748,7 +743,6 @@
               ]
             },
             "id": "1d25486b-c711-4b50-96ed-c6c452bfd062",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "User Store\n",
